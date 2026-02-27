@@ -1,0 +1,12 @@
+flask
+flask-cors
+pandas
+numpy
+sentence-transformers
+scikit-learn
+boto3
+langchain-community
+gunicorn
+python-dotenv
+openai
+agentlightning

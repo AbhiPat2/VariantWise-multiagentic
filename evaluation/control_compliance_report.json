@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "scenarios": 5,
+    "scenario_pass_rate": 1.0,
+    "recommendation_compliance_rate": 1.0,
+    "total_recommendations": 23
+  },
+  "results": [
+    {
+      "scenario": "strict_honda_only",
+      "controls": {
+        "brand_mode": "strict",
+        "preferred_brands": [
+          "Honda"
+        ],
+        "blacklisted_brands": [],
+        "price_tolerance": 0.15,
+        "scoring_priorities": {
+          "budget": 0.7
+        }
+      },
+      "compliance_rate": 1.0,
+      "scenario_pass": true,
+      "recommendation_checks": [
+        {
+          "variant": "Honda Amaze ZX CVT",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Honda Amaze VX CVT",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Honda Amaze V CVT",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Honda Amaze V",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Honda Amaze VX",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "scenario": "blacklist_maruti",
+      "controls": {
+        "brand_mode": "blacklist",
+        "preferred_brands": [],
+        "blacklisted_brands": [
+          "Maruti"
+        ],
+        "price_tolerance": 0.2,
+        "scoring_priorities": {
+          "budget": 0.6
+        }
+      },
+      "compliance_rate": 1.0,
+      "scenario_pass": true,
+      "recommendation_checks": [
+        {
+          "variant": "Volkswagen Virtus Comfortline",
+          "brand": "volkswagen",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Nissan Magnite Tekna Turbo",
+          "brand": "nissan",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Renault Kiger RXT Opt",
+          "brand": "renault",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Hyundai Alcazar Executive Diesel",
+          "brand": "hyundai",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Tata Altroz XM Plus Diesel",
+          "brand": "tata",
+          "compliant": true,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "scenario": "ignore_maruti_prioritize_toyota",
+      "controls": {
+        "brand_mode": "preferred",
+        "preferred_brands": [
+          "Toyota"
+        ],
+        "blacklisted_brands": [
+          "Maruti"
+        ],
+        "price_tolerance": 0.15,
+        "scoring_priorities": {
+          "budget": 0.7,
+          "body_type": 0.8,
+          "transmission": 0.8
+        }
+      },
+      "compliance_rate": 1.0,
+      "scenario_pass": true,
+      "recommendation_checks": [
+        {
+          "variant": "Toyota Hyryder S AT",
+          "brand": "toyota",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Mahindra Scorpio N Z8 Select AT",
+          "brand": "mahindra",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Nissan Magnite Tekna AMT",
+          "brand": "nissan",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Renault Kiger RXT Opt Turbo CVT DT",
+          "brand": "renault",
+          "compliant": true,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "scenario": "must_have_sunroof",
+      "controls": {
+        "brand_mode": "any",
+        "preferred_brands": [],
+        "blacklisted_brands": [],
+        "must_have_features": [
+          "Sunroof"
+        ],
+        "price_tolerance": 0.2,
+        "scoring_priorities": {
+          "features": 0.95,
+          "body_type": 0.8
+        }
+      },
+      "compliance_rate": 1.0,
+      "scenario_pass": true,
+      "recommendation_checks": [
+        {
+          "variant": "MG Hector Plus BlackStorm 7 Str Diesel",
+          "brand": "mg",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "MG Hector Plus BlackStorm Diesel",
+          "brand": "mg",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "MG Hector Plus BlackStorm CVT 7 Str",
+          "brand": "mg",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Tata Punch Adventure S",
+          "brand": "tata",
+          "compliant": true,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "scenario": "tight_budget_auto",
+      "controls": {
+        "brand_mode": "any",
+        "preferred_brands": [],
+        "blacklisted_brands": [],
+        "price_tolerance": 0.05,
+        "scoring_priorities": {
+          "budget": 0.95,
+          "transmission": 0.9
+        }
+      },
+      "compliance_rate": 1.0,
+      "scenario_pass": true,
+      "recommendation_checks": [
+        {
+          "variant": "Toyota Glanza S AMT",
+          "brand": "toyota",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Nissan Magnite Acenta AMT",
+          "brand": "nissan",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Honda Amaze V CVT",
+          "brand": "honda",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Hyundai i20 N-Line N6 DCT",
+          "brand": "hyundai",
+          "compliant": true,
+          "reasons": []
+        },
+        {
+          "variant": "Skoda Kylaq Signature AT",
+          "brand": "skoda",
+          "compliant": true,
+          "reasons": []
+        }
+      ]
+    }
+  ]
+}

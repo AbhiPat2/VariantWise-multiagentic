@@ -1,0 +1,35 @@
+.DS_Store
+terminals/
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+.next_backup_*/
+.next_stale_*/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Python virtual environment
+.venv/
+venv/
+
+# Environment files (NEVER commit these)
+_env*
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+
+# Lock files (keep package-lock.json OR pnpm-lock.yaml, not both)
+pnpm-lock.yaml
+
+# Misc
+*.cpython-*.pyc
